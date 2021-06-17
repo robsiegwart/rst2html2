@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="Docutils 0.17: http://docutils.sourceforge.net/" name="generator"/>
+  <title>
+   Quisque nec efficitur risus
+  </title>
+  <style type="text/css">
+   /*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+  </style>
+  <style>
+   /* 
+
+https://github.com/emareg/classlesscss
+
+MIT License
+
+Copyright (c) 2021 Emanuel Regnath
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+
+/* Classless.css v0.95
+
+Table of Contents:
+ 1. Custom Settings
+ 2. Reset
+ 3. Base Style
+ 4. Extras  (remove unwanted)
+ 5. Classes  (remove unwanted)
+*/
+
+/* 1. Custom Settings –––––––––––––––––––––––––––––––––– */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+:root, html[data-theme='light'] {
+	--rem: 12pt;
+	--width: 50rem;
+	--navpos: absolute;  /* fixed | absolute */
+	--font-p: 1rem/1.7 'Open Sans', Helvetica, sans-serif;
+	--font-h: .9rem/1.5 'Open Sans', Helvetica, sans-serif;
+	--font-c: .9em/1.4 monospace;
+	--border: 1px solid var(--cmed);
+	--ornament: "‹‹‹ ›››";
+	/* foreground   | background color */
+	--cfg:   #433;    --cbg:    #fff;
+	--cdark: #888;    --clight: #f5f6f7;
+	--cmed:  #d1d1d1;
+	--clink: #07c;
+	--cemph: #088;
+}
+
+
+/* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Tiny Reset for block elements  */
+* { box-sizing: border-box; border-spacing: 0; }
+header, footer, figure, table, video, details, blockquote,
+ul, ol, dl, fieldset, pre, pre > code, caption {
+	display: block;
+	margin: 0.5rem 0rem 1rem;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	text-align: left;
+}
+video, summary, input, select { outline:none; }
+html { font-size: var(--rem); background: var(--cbg); }
+body {
+	position: relative;
+	margin: auto;
+	max-width: var(--width);
+	font: var(--font-p);
+	color: var(--cfg);
+	padding: 3.1rem 0.6rem 0;
+	overflow-x: hidden;
+}
+body > footer { margin: 10rem 0rem 0rem; }
+
+/* reset clickable things */
+a, button, select, summary { color: var(--clink); cursor: pointer; }
+a:hover, button:not([disabled]):hover, select:hover, summary:hover {
+	filter: brightness(92%); color: var(--cemph); border-color: var(--cemph);
+}
+
+
+/* 3. Base Style ––––––––––––––––––––––––––––––––––––––– */
+
+/* links */
+a { text-decoration: underline solid var(--cmed);
+	text-underline-position: under; }
+
+/* lists */
+ul, ol, dl { margin: 1rem 0; padding: 0 0 0 2em; }
+li:not(:last-child), dd:not(:last-child) { margin-bottom: 0.5rem; }
+dt { font-weight: bold; }
+
+/* headings */
+h1, h2, h3, h4, h5 { margin: 1.5em 0 .5rem; font: var(--font-h); line-height: 1.2em; clear: both; }
+h1+h2, h2+h3, h3+h4, h4+h5 { margin-top: .5em; padding-top: 0; }  /* non-clashing headings */
+h1 { font-size: 2.2em; font-weight: 300; }
+h2 { font-size: 2.0em; font-weight: 300; font-variant: small-caps; }
+h3 { font-size: 1.5em; font-weight: 400; }
+h4 { font-size: 1.1em; font-weight: 700; }
+h5 { font-size: 1.2em; font-weight: 400; color: var(--cfg); }
+h6 { font-size: 1.0em; font-weight: 700; font-style: italic; display: inline; }
+h6 + p { display: inline; }
+
+/* tables */
+td, th {
+  padding: 0.5rem 0.8rem;
+  text-align: right;
+  border-bottom: 0.1rem solid var(--cmed);
+  white-space: nowrap;
+  font-size: 95%;
+}
+thead th[colspan] { padding: .2rem 0.8rem; text-align: center; }
+thead tr:not(:only-child) td { padding: .2rem 0.8rem; }
+thead+tbody tr:first-child td { border-top: 0.1rem  solid var(--cdark);  }
+td:first-child, th:first-child { text-align: left; }
+tr:hover{ background-color: var(--clight); }
+table img { display: block; }
+
+/* figures */
+img, svg { max-width: 100%; vertical-align: text-top; }
+p>img:not(:only-child) { float: right; margin: 0 0 .5em .5em; }
+figure > img { display: inline-block; width: auto; }
+figure > img:only-of-type, figure > svg:only-of-type { max-width: 100%; display: block; margin: 0 auto 0.4em; }
+figcaption, caption { font: var(--font-h); color: var(--cdark); width: 100%; }
+figure > *:not(:last-child) { margin-bottom: 0.4rem; }
+
+/* code */
+pre > code {
+  margin: 0;
+  position: relative;
+  padding: 0.8em;
+  border-left: .4rem solid var(--cemph);
+}
+code, kbd, samp {
+	padding: 0.2rem;
+	font: var(--font-c);
+	background: var(--clight);
+	border-radius: 4px;
+}
+kbd { border: 1px solid var(--cmed); }
+
+/* details/summary */
+details { border: var(--border); border-radius: 4px; padding: 0 1rem; }
+summary { background-color: var(--clight); margin: 0 -1rem; padding: .5rem 1rem; }
+summary > * { display: inline;  }
+
+/* misc */
+blockquote{ border-left: 0.4rem solid var(--cmed); padding: 0 0 .5rem 1.5rem; font-style: italic;  }
+time{ color: var(--cdark); }
+mark { background: rgba(255,245,90,1.0); }
+hr { border: 0; border-top: 0.1rem solid var(--cmed); }
+nav { width: 100%; background-color: var(--clight); }
+
+
+/* 4. Extra Style –––––––––––––––––––––––––––––––––––––– */
+
+/* Auto Numbering: figure/tables/headings/cite */
+article { counter-reset: h2 0 h3 0 tab 0 fig 0 lst 0 ref 0 eq 0; }
+article figure figcaption:before {
+	color: var(--cemph);
+	counter-increment: fig;
+	content: "Figure " counter(fig) ": ";
+}
+article figure figure { counter-reset: none !important; }
+
+/* subfigures */
+figure { counter-reset: subfig 0 }
+article figure > figure { display: inline-grid; width: auto; }
+figure > figure:not(:last-of-type) { padding-right: 1rem; }
+article figure figure figcaption:before {
+	counter-increment: subfig 1 !important;
+	content: counter(subfig, lower-alpha) ": " !important;	
+}
+
+/* listings */
+article figure pre + figcaption:before {
+	counter-increment: lst 1 !important;
+	content: "Listing " counter(lst) ": " !important;
+}
+
+/* tables */
+figure > table:only-of-type { display: table; margin: 0.5em auto !important; width: fit-content; }
+article figure > table caption { display: table-caption; caption-side: bottom; }
+article figure > table + figcaption:before,
+article table caption:before {
+	color: var(--cemph);
+	counter-increment: tab 1 !important;
+	content: "Table " counter(tab) ": " !important;
+}
+
+/* headings */
+article h2, h3 { position: relative; }
+article h2:before,
+article h3:before {
+	display: inline-block;
+	position: relative;
+	font-size: 0.6em;
+	text-align: right;
+	vertical-align: baseline;
+	left: -1rem;
+	width: 2.5em;
+	margin-left: -2.5em;
+}
+article h1 { counter-set: h2; }
+article h2:before { counter-increment: h2; content: counter(h2) ". "; counter-set: h3; }
+article h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) ". ";}
+@media (max-width: 60rem) { h2:before, h3:before { display: none !important; } }
+
+
+/* tooltip + citation */
+article p>cite:before {
+	color: var(--clink); padding: 0 .5em 0 0;
+	counter-increment: ref; content: " [" counter(ref) "] ";
+	vertical-align: super; font-size: .6em;
+}
+article p>cite > *:only-child { display: none; }
+article p>cite:hover > *:only-child,
+[data-tooltip]:hover:before {
+	display: inline-block; z-index: 40;
+	white-space: pre-wrap;
+	position: absolute; left: 2rem; right: 2rem;
+	padding: 1em 2em;
+	text-align: center;
+	transform:translateY( -50% );
+	content: attr(data-tooltip);
+	color: var(--cbg);
+	background-color: var(--cemph);
+	box-shadow: 0 2px 10px 0 black;
+}
+[data-tooltip] { color: var(--clink); }
+
+/* navbar */
+nav+* { margin-top: 3rem; }
+body>nav, header nav {
+	position: var(--navpos);
+	top: 0; left: 0; right: 0;
+	z-index: 41;
+	box-shadow: 0vw -40vw 0 40vw var(--clight), 0 -498px 4px 500px var(--cdark);
+}
+nav ul li > a { text-decoration: none !important; }
+nav ul { list-style-type: none; }
+nav ul:first-child { margin: 0; padding: 0; overflow: visible; }
+nav ul:first-child > li {
+	display: inline-block;
+	margin: 0;
+	padding: 0.8rem .6rem;
+}
+nav ul > li > ul {
+	display: none;
+	width: auto;
+	position: absolute;
+	margin: 0.5rem 0;
+	padding: 1rem 2rem;
+	background-color: var(--clight);
+	border: var(--border);
+	border-radius: 4px;
+	z-index: 42;
+}
+nav ul > li > ul > li { white-space: nowrap; }
+nav ul > li:hover > ul { display: block; }
+@media (max-width: 40rem) {
+	nav ul:first-child > li:first-child:after { content: " \25BE"; }
+	nav ul:first-child > li:not(:first-child):not(.sticky) { display: none; }
+	nav ul:first-child:hover > li:not(:first-child):not(.sticky) { display: block; float: none !important; }
+}
+
+/* big first letter */
+article > section:first-of-type > h2:first-of-type + p:first-letter,
+article > h2:first-of-type + p:first-letter {
+	float: left;
+	font-size: 3.5em;
+	padding: 0.1em 0.1em 0 0;
+	line-height: 0.68em;
+	color: var(--cemph);
+}
+
+/* ornaments */
+section:after {
+	display: block;
+	margin: 1em 0;
+	color: var(--cmed);
+	text-align: center;
+	font-size: 1.5em;
+	content: var(--ornament);
+}
+
+/* side menu (aside is not intended for use in a pagraph!) */
+main aside {
+	position: absolute; 
+	width: 8rem;      right: -8.6rem;
+	font-size: 0.8em; line-height: 1.4em;
+}
+@media (max-width: 70rem) { main aside { display: none; } }
+
+/* forms and inputs  */
+textarea, input:not([type=range]), button, select {
+	font: var(--font-h);
+	border-radius: 4px;
+	border: 1.5px solid var(--cmed);
+	padding: 0.4em 0.8em;
+}
+fieldset select, input:not([type=checkbox]):not([type=radio]) {
+	display: block;
+	width: 100%;
+	margin: 0 0 1rem;
+}
+button, select {
+	font-weight: bold;
+	background-color: var(--clight);
+	margin: .5em;
+	border: 1.5px solid var(--clink);
+}
+button { padding: 0.4em 1em; font-size: 85%; letter-spacing: 0.1em; }
+button[disabled]{ color: var(--cdark); border-color: var(--cmed); }
+fieldset { border-radius: 4px; border: var(--border); }
+textarea:hover, input:not([type=checkbox]):not([type*='ra']):hover, select:hover{
+  border: 1.5px solid var(--cemph);
+}
+textarea:focus, input:not([type=checkbox]):not([type*='ra']):focus{
+	border: 1.5px solid var(--clink);
+	box-shadow: 0 0 5px var(--clink);
+}
+p>button { padding: 0 .5em; margin: 0 .5em; }
+p>select { padding: 0;      margin: 0 .5em; }
+
+
+/* 5. Bootstrap-compatible classes ––––––––––––––––––––– */
+
+/* grid */
+.row { display: flex; margin:  0.5rem -0.6rem; align-items: stretch; }
+.row [class*="col"] { padding: 0  0.5rem; }
+.row .col   { flex: 1 1 100%; }
+.row .col-2 { flex: 0 0 16.666%; }
+.row .col-3 { flex: 0 0 25%; }
+.row .col-4 { flex: 0 0 33.333%; }
+.row .col-6 { flex: 0 0 50%; }
+@media (max-width: 40em) { .row { flex-direction: column !important; } }
+
+/* cards */
+.card {
+	display: block;
+	margin: .5rem 2px;
+	padding: .5em 1em 0.5em;
+	border-radius: 4px;
+	border: var(--border);
+	box-shadow: 0 2px 4px 0 var(--cdark);
+}
+
+/* align */
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+.float-left  { float: left !important; }
+.float-right { float: right !important; }
+.clearfix    { clear: both; }
+
+/* colors */
+.text-black    { color: #000; }
+.text-white    { color: #fff; }
+.text-primary  { color: var(--cemph); }
+.text-secondary{ color: var(--cdark); }
+.bg-white    { background-color: #fff; }
+.bg-light    { background-color: var(--clight); }
+.bg-primary  { background-color: var(--cemph); }
+.bg-secondary{ background-color: var(--cmed); }
+
+/* margins */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.m-0 { margin: 0 !important; }
+.m-1, .mx-1, .mr-1 { margin-right:  1.0rem !important; }
+.m-1, .mx-1, .ml-1 { margin-left:   1.0rem !important; }
+.m-1, .my-1, .mt-1 { margin-top:    1.0rem !important; }
+.m-1, .my-1, .mb-1 { margin-bottom: 1.0rem !important; }
+
+/* pading */
+.p-0 { padding: 0 !important; }
+.p-1, .px-1, .pr-1 { padding-right:  1.0rem !important; }
+.p-1, .px-1, .pl-1 { padding-left:   1.0rem !important; }
+.p-1, .py-1, .pt-1 { padding-top:    1.0rem !important; }
+.p-1, .py-1, .pb-1 { padding-bottom: 1.0rem !important; }
+  </style>
+ </head>
+ <body>
+  <div class="document" id="quisque-nec-efficitur-risus">
+   <h1 class="title">
+    Quisque nec efficitur risus
+   </h1>
+   <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet
+tempor nisi, nec tempus enim. Donec facilisis libero suscipit ultrices lacinia.
+Maecenas volutpat auctor quam, in vulputate velit dignissim scelerisque. Integer
+eget cursus sapien.
+    <a class="citation-reference" href="#phasellus" id="id1">
+     [Phasellus]
+    </a>
+    in erat et tellus bibendum finibus. Maecenas eu
+tincidunt libero. Aenean varius eu dolor non interdum.
+   </p>
+   <p>
+    Integer sed libero sollicitudin, fermentum nisl eu, porttitor arcu. Aliquam
+tincidunt, ligula eu scelerisque aliquam, tortor nibh elementum quam, laoreet
+pulvinar mauris massa non risus. Aenean mattis pulvinar justo, nec viverra
+massa. Sed sit amet fermentum ligula.
+   </p>
+   <ul class="simple">
+    <li>
+     Phasellus
+    </li>
+    <li>
+     eu lacus
+    </li>
+    <li>
+     ligula
+    </li>
+    <li>
+     Nullam
+    </li>
+    <li>
+     urna
+    </li>
+    <li>
+     magna
+    </li>
+   </ul>
+   <div class="section" id="duis-finibus-fringilla-vulputate">
+    <h1>
+     Duis finibus fringilla vulputate
+    </h1>
+    <p>
+     Quisque aliquet faucibus ultrices. Sed laoreet nunc sed ipsum commodo, ac
+tincidunt ligula volutpat. Vestibulum pellentesque massa sed imperdiet sagittis.
+    </p>
+    <table border="1" class="docutils">
+     <colgroup>
+      <col width="21%"/>
+      <col width="27%"/>
+      <col width="52%"/>
+     </colgroup>
+     <thead valign="bottom">
+      <tr>
+       <th class="head">
+        Lorem ipsum
+       </th>
+       <th class="head">
+        dolor sit amet,
+       </th>
+       <th class="head">
+        consectetur adipiscing elit.
+       </th>
+      </tr>
+     </thead>
+     <tbody valign="top">
+      <tr>
+       <td>
+        Maecenas smod
+       </td>
+       <td>
+        neque non nibh
+       </td>
+       <td>
+        feugiat iaculis.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Nulla finibus
+       </td>
+       <td>
+        libero id suscipit
+       </td>
+       <td>
+        tincidunt.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Ut quis nunc
+       </td>
+       <td>
+        sed purus sodales
+       </td>
+       <td>
+        viverra.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Maecenas ac
+       </td>
+       <td>
+        enim in ligula
+       </td>
+       <td>
+        sodales finibus.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Praesent eget
+       </td>
+       <td>
+        libero ac nulla
+       </td>
+       <td>
+        consequat maximus ac nec nisi.
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     Pellentesque pellentesque sollicitudin libero, eget tincidunt nibh vestibulum
+sit amet. Suspendisse sodales magna et mauris ornare ullamcorper. Fusce porta
+rutrum nisi et
+     <a class="reference external" href="https://python.org/">
+      porttitor
+     </a>
+     .
+    </p>
+    <dl class="docutils">
+     <dt>
+      Vestibulum euismod
+     </dt>
+     <dd>
+      Nullam condimentum dolor lorem
+     </dd>
+     <dt>
+      Suspendisse sodales
+     </dt>
+     <dd>
+      Pellentesque pellentesque
+     </dd>
+    </dl>
+    <div class="section" id="donec-facilisis-libero">
+     <h2>
+      Donec facilisis libero
+     </h2>
+     <table class="docutils field-list" frame="void" rules="none">
+      <col class="field-name"/>
+      <col class="field-body"/>
+      <tbody valign="top">
+       <tr class="field">
+        <th class="field-name">
+         suscipit nisl:
+        </th>
+        <td class="field-body">
+         Aliquam nec ex rhoncus
+        </td>
+       </tr>
+       <tr class="field">
+        <th class="field-name">
+         nec tempus:
+        </th>
+        <td class="field-body">
+         Aenean varius eu dolor non interdum.
+        </td>
+       </tr>
+       <tr class="field">
+        <th class="field-name">
+         eget tincidunt:
+        </th>
+        <td class="field-body">
+         Fusce porta
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus.
+     </p>
+     <blockquote>
+      <p>
+       Phasellus at mollis nulla, a convallis lectus. Mauris enim
+risus, pellentesque vitae felis ac, placerat laoreet purus.
+Cras diam ligula, scelerisque nec magna sit amet, ornare ultrices est.
+Suspendisse id sapien ante.
+      </p>
+      <p class="attribution">
+       �Lorem ipsum
+      </p>
+     </blockquote>
+     <p>
+      Proin ultrices tortor diam, ut scelerisque odio eleifend ac. Donec semper augue
+et ante mattis iaculis. Pellentesque auctor non dolor non efficitur. Sed
+bibendum sagittis odio id vulputate. Duis posuere ullamcorper aliquet. Ut
+venenatis nulla a convallis rutrum. Quisque ultricies aliquet ante ut dapibus.
+     </p>
+     <p>
+      Pellentesque quis eleifend mauris. Maecenas sem mi, sodales vitae tempor vitae,
+hendrerit nec velit. Maecenas suscipit tincidunt nisl a viverra.
+     </p>
+     <pre class="literal-block">
+Etiam blandit vestibulum rhoncus. Etiam sit amet viverra mi. Donec
+venenatis, sem id sodales maximus, arcu lectus facilisis urna, nec
+tincidunt orci massa feugiat velit. Sed tellus odio, ullamcorper vitae
+lectus vitae, pharetra posuere mauris. Morbi rhoncus mauris a arcu
+tincidunt interdum. Aenean vel magna rutrum, fringilla nunc nec,
+sollicitudin libero. Integer ut porta dui.
+</pre>
+     <p>
+      Praesent aliquet rhoncus nulla, non commodo ligula efficitur at. Integer
+vestibulum lacus et elit vehicula convallis.
+     </p>
+     <ol class="arabic simple">
+      <li>
+       Integer accumsan blandit quam quis sagittis.
+      </li>
+      <li>
+       Praesent vestibulum mi massa, sit amet iaculis mi pulvinar in.
+      </li>
+      <li>
+       Cras sed purus non dui consectetur efficitur. Duis a justo tortor.
+      </li>
+     </ol>
+     <hr class="docutils"/>
+     <table class="docutils citation" frame="void" id="phasellus" rules="none">
+      <colgroup>
+       <col class="label"/>
+       <col/>
+      </colgroup>
+      <tbody valign="top">
+       <tr>
+        <td class="label">
+         <a class="fn-backref" href="#id1">
+          [Phasellus]
+         </a>
+        </td>
+        <td>
+         Donec tincidunt bibendum dui
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
