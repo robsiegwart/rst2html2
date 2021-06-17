@@ -1,18 +1,18 @@
 """
-rst-wrapper
+rst2html2
 
 Provides a command-line-interface to the native Docutils conversion utility
 for converting reStructuredText to HTML, with support for CSS theme selection.
 
 Usage ::
 
-    rst2 INPUT_FILE OUTPUT_FILE --style=STYLENAME
+    rst2html2 INPUT_FILE OUTPUT_FILE --style=STYLENAME
 
 Arguments to the ``--style`` option include:
 
-- 
-- 
-- 
+- bamboo
+- classless
+- tufte
 
 """
 import os
@@ -32,7 +32,6 @@ def html_suffix(string):
 
 STYLES = {
     'classless':    'classless.css',
-    'latex':        'latex.min.css',
     'bamboo':       'bamboo.min.css',
     'tufte':        'tufte.css'
 }
@@ -41,7 +40,7 @@ STYLES = {
 @click.command()
 @click.argument('input_file', type=click.Path(exists=True))
 @click.option('-o', '--output_file', default=None, help='Name of output file. Defaults to <input_file>.html.')
-@click.option('-s', '--style', default=None, help='Style name for output HTML.',
+@click.option('-s', '--style', default=None, help='Style name for output HTML. Defaults to none.',
                 type=click.Choice(STYLES.keys()))
 def convert(input_file, output_file, style):
     """Convert a reStructuredText file to HTML"""
