@@ -13,9 +13,9 @@ After downloading, in your virtualenv, issue:
 
 ## Included CSS files
 
-- bamboo
-- classless
-- tufte
+- [bamboo](https://github.com/rilwis/bamboo)
+- [classless](https://github.com/emareg/classlesscss)
+- [tufte](https://github.com/edwardtufte/et-book)
 
 ## Usage
 
