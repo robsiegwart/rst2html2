@@ -10,5 +10,6 @@ setup(
     entry_points='''
         [console_scripts]
         rst2html2=rst2html2:convert
-    '''
+    ''',
+    package_data={'':['css/*']}
 )
